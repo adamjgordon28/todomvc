@@ -7,6 +7,7 @@ export default class Controller {
 	constructor(model, view) {
 		this.model = model;
 		this.view = view;
+		this.brian = 'brian'
 
 		this.view.bind('newTodo', title => this.addItem(title));
 		this.view.bind('itemEdit', item => this.editItem(item.id));
